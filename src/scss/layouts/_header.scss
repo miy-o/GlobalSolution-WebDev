@@ -1,0 +1,25 @@
+header {
+    background-color: #c0c0c0;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    font-family: Inter, sans-serif;
+    .cabecalhoContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        .logoImage{
+            img{
+                height: 22px;
+                width: 110px;
+            }
+        }
+        .usuarioInfo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            height: 100%;
+        }
+    }
+}

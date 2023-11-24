@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "Neue";
+    src: url(/src/assets/PPNeueMachina-Regular.otf);
+  }
+  
+  @font-face {
+    font-family: "Neue-Light";
+    src: url(/src/assets/PPNeueMachina-Light.otf);
+  }
+  
+  @font-face {
+    font-family: "Neue-Bold";
+    src: url(/src/assets/PPNeueMachina-Ultrabold.otf);
+  }
+  
+  @font-face {
+    font-family: "AgrandirG-Heavy";
+    src: url(/src/assets/PPAgrandir-GrandHeavy.otf);
+  }
+
+  @font-face {
+    font-family: "AgrandirG-Light";
+    src: url(/src/assets/PPAgrandir-GrandLight.otf);
+  }
+  
+  
+  @font-face {
+    font-family: "AgrandirN";
+    src: url(/src/assets/PPAgrandir-NarrowRegular.otf);
+  }
+
+  @font-face {
+    font-family: "Agrandir";
+    src: url(/src/assets/PPAgrandir-Regular.otf);
+  }
+
+  @font-face {
+    font-family: "AgrandirW-Light";
+    src: url(/src/assets/PPAgrandir-WideLight.otf);
+  }
+
+body {
+    background-color: #f1f1f1;
+    
+    .containerBody {
+        display: flex;
+        justify-content: center;
+        h1 {
+            font-family: 'AgrandirG-Heavy', sans-serif;
+        }
+        p {
+            font-family: 'Agrandir', sans-serif;
+        }
+
+        h3 {
+            font-family: 'AgrandirW-Light', sans-serif;
+        }
+        
+        .containerLeft {
+            flex: 50%;
+            
+            .leftImage {
+                display: flex;
+                justify-content: center;
+                margin: 50px 0 20px 0;
+                img{
+                    height: 500px;
+                    width: 520px;
+                }
+            }
+            
+            .containerTextMain {
+                margin: 50px;
+                p {
+                    color: #494949;
+                    font-size: 20px;
+                }
+                
+                .containerTitle {
+                    h1 {
+                        font-size: 50px;
+                    }
+                    h3 {
+                        font-size: 30px;
+                        margin: 30px 0 20px 0;
+                    }
+                }
+
+                .textContainer{
+                    margin: 40px 0 40px 0;
+                    
+                    .containerText{
+                        display: flex;
+                        flex-direction: row;
+                        .icon{
+                            height: 80px;
+                            width: 80px;
+                            padding: 15px;
+                            fill: K
+                        }
+                        p {
+                            margin-top: 10px;
+                            font-size: 25px;
+                        }
+                    }
+                    
+                   
+                }
+            }
+        }
+       
+        .containerRight {
+            flex: 50%;
+            display: flex;
+            justify-content: center;
+            
+            .textContainer{
+                background-color: #272727;
+                margin: 100px;
+                padding: 100px;
+                
+                .containerTitle{
+                    margin: 50px 0 0 0;
+                    h1 {
+                        color: #f1f1f1;
+                        font-size: 50px;
+                    }
+                    
+                    }
+                
+                .containerText{ 
+                    p {
+                        color: #f1f1f1d0;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        
+        .containerFooter {
+            background-color: #272727;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            padding: 20px;
+            height: 50px;
+            
+            .footerText{
+                p {
+                    font-family: 'AgrandirW-Light', sans-serif;
+                    color: #f1f1f1;
+                }
+            }
+            
+            .footerIcons{
+                img{
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+
+}
+

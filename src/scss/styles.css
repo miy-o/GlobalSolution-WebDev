@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #2b2b2b;
+  cursor: pointer;
+  font-weight: 500;
+  color: #f1f1f1;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  -o-border-image: initial;
+     border-image: initial;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+form button {
+  width: 500px;
+  height: 40px;
+}
+
+header {
+  background-color: #c0c0c0;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  font-family: Inter, sans-serif;
+}
+header .cabecalhoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+header .cabecalhoContainer .logoImage img {
+  height: 22px;
+  width: 110px;
+}
+header .cabecalhoContainer .usuarioInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.corpoContainer {
+  background-color: #f1f1f1;
+  height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.corpoContainer .loginContainer {
+  height: 80vh;
+  width: 1500px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1600px) {
+  .corpoContainer .loginContainer {
+    width: 90%;
+  }
+}
+.corpoContainer .loginContainer .formImage {
+  height: 100%;
+  width: 50%;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.corpoContainer .loginContainer .formImage img {
+  height: 130px;
+  width: 680px;
+}
+.corpoContainer .loginContainer .formContainer {
+  width: 50%;
+  background-color: #d4d4d4;
+}
+.corpoContainer .loginContainer .formContainer form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.corpoContainer .loginContainer .formContainer form legend {
+  font-family: Inter, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+.corpoContainer .loginContainer .formContainer form legend::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 0.3rem;
+  background-color: rgba(224, 224, 224, 0.945);
+  position: absolute;
+  margin: 4px auto;
+  border-radius: 10px;
+}
+.corpoContainer .loginContainer .formContainer form .inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Inter, sans-serif;
+  color: rgba(0, 0, 0, 0.753);
+  font-weight: 600;
+  font-size: 16px;
+}
+.corpoContainer .loginContainer .formContainer form .inputContainer input {
+  box-shadow: rgba(0, 0, 0, 0.11) 1px 1px 6px;
+  font-size: 0.8rem;
+  margin: 0.6rem 0px;
+  padding: 0.8rem 1.2rem;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  -o-border-image: initial;
+     border-image: initial;
+  border-radius: 10px;
+  width: 500px;
+}
+.corpoContainer .loginContainer .formContainer form .inputContainer input:hover {
+  background-color: rgba(238, 238, 238, 0.4588235294);
+}
+.corpoContainer .loginContainer .formContainer form .inputContainer input:focus-visible {
+  outline: 1px solid rgba(0, 0, 0, 0.9450980392);
+}
+
+@font-face {
+  font-family: "Neue";
+  src: url(/src/assets/PPNeueMachina-Regular.otf);
+}
+@font-face {
+  font-family: "Neue-Light";
+  src: url(/src/assets/PPNeueMachina-Light.otf);
+}
+@font-face {
+  font-family: "Neue-Bold";
+  src: url(/src/assets/PPNeueMachina-Ultrabold.otf);
+}
+@font-face {
+  font-family: "AgrandirG-Heavy";
+  src: url(/src/assets/PPAgrandir-GrandHeavy.otf);
+}
+@font-face {
+  font-family: "AgrandirG-Light";
+  src: url(/src/assets/PPAgrandir-GrandLight.otf);
+}
+@font-face {
+  font-family: "AgrandirN";
+  src: url(/src/assets/PPAgrandir-NarrowRegular.otf);
+}
+@font-face {
+  font-family: "Agrandir";
+  src: url(/src/assets/PPAgrandir-Regular.otf);
+}
+@font-face {
+  font-family: "AgrandirW-Light";
+  src: url(/src/assets/PPAgrandir-WideLight.otf);
+}
+body {
+  background-color: #f1f1f1;
+}
+body .containerBody {
+  display: flex;
+  justify-content: center;
+}
+body .containerBody h1 {
+  font-family: "AgrandirG-Heavy", sans-serif;
+}
+body .containerBody p {
+  font-family: "Agrandir", sans-serif;
+}
+body .containerBody h3 {
+  font-family: "AgrandirW-Light", sans-serif;
+}
+body .containerBody .containerLeft {
+  flex: 50%;
+}
+body .containerBody .containerLeft .leftImage {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 20px 0;
+}
+body .containerBody .containerLeft .leftImage img {
+  height: 500px;
+  width: 520px;
+}
+body .containerBody .containerLeft .containerTextMain {
+  margin: 50px;
+}
+body .containerBody .containerLeft .containerTextMain p {
+  color: #494949;
+  font-size: 20px;
+}
+body .containerBody .containerLeft .containerTextMain .containerTitle h1 {
+  font-size: 50px;
+}
+body .containerBody .containerLeft .containerTextMain .containerTitle h3 {
+  font-size: 30px;
+  margin: 30px 0 20px 0;
+}
+body .containerBody .containerLeft .containerTextMain .textContainer {
+  margin: 40px 0 40px 0;
+}
+body .containerBody .containerLeft .containerTextMain .textContainer .containerText {
+  display: flex;
+  flex-direction: row;
+}
+body .containerBody .containerLeft .containerTextMain .textContainer .containerText .icon {
+  height: 80px;
+  width: 80px;
+  padding: 15px;
+  fill: K;
+}
+body .containerBody .containerLeft .containerTextMain .textContainer .containerText p {
+  margin-top: 10px;
+  font-size: 25px;
+}
+body .containerBody .containerRight {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+}
+body .containerBody .containerRight .textContainer {
+  background-color: #272727;
+  margin: 100px;
+  padding: 100px;
+}
+body .containerBody .containerRight .textContainer .containerTitle {
+  margin: 50px 0 0 0;
+}
+body .containerBody .containerRight .textContainer .containerTitle h1 {
+  color: #f1f1f1;
+  font-size: 50px;
+}
+body .containerBody .containerRight .textContainer .containerText p {
+  color: rgba(241, 241, 241, 0.8156862745);
+  font-size: 16px;
+}
+body footer .containerFooter {
+  background-color: #272727;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 50px;
+}
+body footer .containerFooter .footerText p {
+  font-family: "AgrandirW-Light", sans-serif;
+  color: #f1f1f1;
+}
+body footer .containerFooter .footerIcons img {
+  height: 30px;
+  width: 30px;
+}/*# sourceMappingURL=styles.css.map */

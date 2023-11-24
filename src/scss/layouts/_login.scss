@@ -1,0 +1,88 @@
+.corpoContainer {
+    background-color: #f1f1f1;
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .loginContainer {
+        height: 80vh;
+        width: 1500px;
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 1600px) {
+            width: 90%;
+        }
+        .formImage {
+            height: 100%;
+            width: calc(100%/2);
+            background-color: #1a1a1a;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            img {
+                height: 130px;
+                width: 680px;
+            }
+        }
+        .formContainer {
+            width: calc(100%/2);
+            background-color: #d4d4d4;
+            form {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                legend {
+                    font-family: Inter, sans-serif;
+                    font-size: 32px;
+                    font-weight: 600;
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 4rem;
+                        height: 0.3rem;
+                        background-color: rgba(224, 224, 224, 0.945);
+                        position: absolute;
+                        margin: 4px auto;
+                        border-radius: 10px;
+                   }
+                }
+
+                .inputContainer {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    font-family: Inter, sans-serif;
+                    color: rgba(0, 0, 0, 0.753);
+                    font-weight: 600;
+                    font-size: 16px;
+                    input {
+                        box-shadow: rgba(0, 0, 0, 0.11) 1px 1px 6px;
+                        font-size: 0.8rem;
+                        margin: 0.6rem 0px;
+                        padding: 0.8rem 1.2rem;
+                        border-width: initial;
+                        border-style: none;
+                        border-color: initial;
+                        border-image: initial;
+                        border-radius: 10px;
+                        width: 500px;
+
+                        &:hover {
+                            background-color: #eeeeee75;
+                        }
+                        
+                        &:focus-visible {
+                            outline: 1px solid #000000f1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
